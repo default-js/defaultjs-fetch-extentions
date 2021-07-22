@@ -1,0 +1,20 @@
+{
+	"test": {
+		"string": "string",
+		"node-1": { "@attribute-1": "attribute-1", "@attribute-2": "attribute-2", "@": "string" },
+		"node-2": {
+			"@attribute-1": "attribute-1",
+			"@attribute-2": "attribute-2",
+			"node-child": [
+				{ "@attribute-1": "attribute-1", "@attribute-2": "attribute-2", "@": "node-child-1" },
+				{ "@attribute-1": "attribute-1", "@attribute-2": "attribute-2", "@": "node-child-2" },
+				{ "@attribute-1": "attribute-1", "@attribute-2": "attribute-2", "@": "node-child-3" },
+				{ "@attribute-1": "attribute-1", "@attribute-2": "attribute-2", "@": "node-child-4" },
+				{ "@attribute-1": "attribute-1", "@attribute-2": "attribute-2", "@": "node-child-5" },
+				{ "@attribute-1": "attribute-1", "@attribute-2": "attribute-2", "@": "node-child-6" }
+			],
+			"@": "string"
+		},
+		"string-list": ["string-1", "string-2", "string-3", "string-4", "string-5"]
+	}
+}
