@@ -1,7 +1,7 @@
 {
 	"name": "@default-js/defaultjs-fetch-extentions",	
 	"buildname": "defaultjs-fetch-extentions",
-	"version": "1.2.2",
+	"version": "1.2.3",
 	"description": "extends the browser fetch with more functionality",
 	"main": "index.js",
 	"repository": {
