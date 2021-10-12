@@ -1,11 +1,15 @@
 import "../../../index";
 
 describe("test", () => {
+
+	const HEADER_CONTENTYPE = "Content-Type";
+
 	beforeAll(() => {});	
 	
 	it("xml-file", async () => {
 		const file = await fetch("/data/xml-file.xml");
-		file.headers["Content-Type"] = "application/xml";
+		if(!file.headers.has(HEADER_CONTENTYPE))
+			file.headers.set(HEADER_CONTENTYPE, "application/xml");
 		const json = await file.json();
 		
 		console.log(JSON.stringify(json));
@@ -14,7 +18,8 @@ describe("test", () => {
 
 	it("json-file", async () => {
 		const file = await fetch("/data/json-file.json");
-		file.headers["Content-Type"] = "application/json";
+		if(!file.headers.has(HEADER_CONTENTYPE))
+			file.headers.set(HEADER_CONTENTYPE, "application/json");
 		const json = await file.json();
 
 		console.log(JSON.stringify(json));
